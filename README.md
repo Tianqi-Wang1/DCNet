@@ -1,4 +1,4 @@
-A demo implementation of the CIFAR100-Split10 experiment described in the submission, entitled **On the Discrimination and Consistency for Exemplar-Free Class Incremental Learning**.
+Thank you for your interest. This repository contains the code for **On the Discrimination and Consistency for Exemplar-Free Class Incremental Learning** accepted at IJCAI-25. The current release provides an implementation example for the CIFAR100-Split10 task. We will release the complete codebase for all experiments shortly.
 
 **Installation & Requirements**
 
@@ -24,4 +24,5 @@ Please run:
 
 **License**
 The codes are proprietary. Please do not distribute.
+
 
