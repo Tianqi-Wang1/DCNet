@@ -22,7 +22,5 @@ Please run:
 
 `sh train_cifar100_10t.sh`
 
-**License**
-The codes are proprietary. Please do not distribute.
 
 
