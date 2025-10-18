@@ -43,7 +43,10 @@ class BaseModel(nn.Module, metaclass=ABCMeta):
     def __init__(self, last_dim, P, num_classes=10, feature_dim=128):
         super(BaseModel, self).__init__()
         self.P = P
-        d = pkl.load(open('./BV_pkl_CL/eq_100_4+10_256_0.1_9.pkl', 'rb')).data
+        if 'tinyImagenet' in P.dataset:
+            d = pkl.load(open('./BV_pkl_CL/eq_200_4+10_256_0.1_9.pkl', 'rb')).data  # .detach().cpu()
+        else:
+            d = pkl.load(open('./BV_pkl_CL/eq_100_4+10_256_0.1_9.pkl', 'rb')).data  # .detach().cpu()
         d = F.normalize(d, dim=1).cuda() #dim=1
         self.prototypes = d
 

@@ -100,7 +100,7 @@ def parse_args(default=False):
     parser.add_argument('--embedding_dim', default = 512, type=int,
                         help='embedding_dim dim')
     parser.add_argument('--temp', type=float, default=0.1, help='temperature for loss function')
-    parser.add_argument('--temp_sim', type=float, default=0.1, help='temperature for loss function')
+    parser.add_argument('--temp_sim', type=float, default=0.2, help='temperature for loss function')
 
     if default:
         return parser.parse_args('')  # empty string

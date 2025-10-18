@@ -159,7 +159,10 @@ class CompLoss(nn.Module):
         self.P = P
         self.temperature = temperature
         self.base_temperature = base_temperature
-        d = pkl.load(open('./BV_pkl_CL/eq_100_4+10_256_0.1_9.pkl', 'rb')).data  # .detach().cpu()  #加载基向量
+        if 'tinyImagenet' in P.dataset:
+            d = pkl.load(open('./BV_pkl_CL/eq_200_4+10_256_0.1_9.pkl', 'rb')).data  # .detach().cpu()
+        else:
+            d = pkl.load(open('./BV_pkl_CL/eq_100_4+10_256_0.1_9.pkl', 'rb')).data  # .detach().cpu()
         d = F.normalize(d, dim=1).cuda()  # dim=1
         self.prototypes = d
 
