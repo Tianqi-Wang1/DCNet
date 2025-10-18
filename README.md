@@ -31,9 +31,13 @@ For the ImageNet-Subset dataset, you can similarly download it from Link https:/
 #### How to Test
 
 You can first download the pre-trained weights from link https://drive.google.com/file/d/1m9TPJd8atgdQowZJr7YfgD9Zc7nkZkF1/view?usp=sharing and place the **logs** folder in your project directory. Then you can run:
+
 `sh test_cifar100_10t.sh`
+
 `sh test_timagenet_10t.sh`
+
 `sh test_imagenet100_10t.sh`
+
 to reproduce our results respectively.
 
 
@@ -43,7 +47,9 @@ to reproduce our results respectively.
 Please run:
 
 `sh train_cifar100_10t.sh`
+
 `sh train_timagenet_10t.sh`
+
 `sh train_imagenet100_10t.sh`
 
 to retrain three different dataset tasks from scratch.
@@ -73,4 +79,5 @@ Our code draws upon the prior work of
 [CLOM]: https://arxiv.org/abs/2203.09450
 
 . We express our gratitude for their work.
+
 
