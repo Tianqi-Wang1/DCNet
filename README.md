@@ -14,7 +14,7 @@ The current version of the codes has been tested with Python 3.8.19 on both Wind
 - tensorboardx==2.6.2.2
 - diffdist==0.1
 
-Please install the necessary packages
+Please install the necessary packages.
 
 
 
@@ -73,3 +73,4 @@ Our code draws upon the prior work of
 [CLOM]: https://arxiv.org/abs/2203.09450
 
 . We express our gratitude for their work.
+
