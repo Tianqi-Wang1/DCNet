@@ -74,10 +74,4 @@ If you find our work helpful, you may cite our articles:
 
 #### Acknowledgments
 
-Our code draws upon the prior work of 
-
-[CLOM]: https://arxiv.org/abs/2203.09450
-
-. We express our gratitude for their work.
-
-
+Our code draws upon the prior work of [CLOM](https://arxiv.org/abs/2203.09450). We express our gratitude for their work.
