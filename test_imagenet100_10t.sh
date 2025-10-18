@@ -11,4 +11,4 @@ python eval.py \
 --t $t \
 --all_dataset \
 --printfn "cil test results.txt" \
---data_path /root/autodl-tmp
+--data_path ./data

@@ -14,7 +14,7 @@ python train.py \
 --amp \
 --lamb0 1.0 \
 --lamb1 0.75 \
---data_path /root/autodl-tmp
+--data_path ./data
 
 # OOD classifier train
 CUDA_VISIBLE_DEVICES=0 \
@@ -25,7 +25,7 @@ python train.py \
 --batch_size 64 \
 --epoch 50 \
 --t $t \
---data_path /root/autodl-tmp
+--data_path ./data
 
 # Inference
 CUDA_VISIBLE_DEVICES=0 \
@@ -37,7 +37,7 @@ python eval.py \
 --t $t \
 --all_dataset \
 --printfn "cil results.txt" \
---data_path /root/autodl-tmp
+--data_path ./data
 
 for t in 1 2 3 4 5 6 7 8 9
 do
@@ -54,7 +54,7 @@ do
 	--amp \
 	--lamb0 1.0 \
 	--lamb1 0.75 \
-    --data_path /root/autodl-tmp
+    --data_path ./data
 
 	# OOD classifier train
 	CUDA_VISIBLE_DEVICES=0 \
@@ -65,7 +65,7 @@ do
 	--batch_size 64 \
 	--epoch 50 \
 	--t $t \
-    --data_path /root/autodl-tmp
+    --data_path ./data
 
 	# Inference
 	CUDA_VISIBLE_DEVICES=0 \
@@ -77,6 +77,6 @@ do
 	--t $t \
 	--all_dataset \
 	--printfn "cil results.txt" \
-    --data_path /root/autodl-tmp
+    --data_path ./data
 
 done
